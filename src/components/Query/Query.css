@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f2862;
+}
+
+.SearchBar {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  height: fit-content;
+}
+input {
+  width: 500px;
+}
+.SearchBar input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.SearchBar button {
+  color: #f7c331;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+  border-radius: 15px;
+}
+.box {
+  width: 140px;
+  height: auto;
+  float: left;
+  transition: 0.5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 0 5px;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 15px;
+}
+
+.box:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+  border-radius: 15px;
+}
+
+.box:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+  border-radius: 15px;
+}
+
+.box:hover {
+  box-shadow: 0 5px 15px #f7c331;
+}
+
+.box:hover:before {
+  border-color: #f7c331;
+  height: 100%;
+  transform: translateX(0);
+  transition: 0.3s transform linear, 0.3s height linear 0.3s;
+}
+
+.box:hover:after {
+  border-color: #f8d77b;
+  height: 100%;
+  transform: translateX(0);
+  transition: 0.3s transform linear, 0.3s height linear 0.3s;
+}
+
+.WeatherCard {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 45px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.WeatherCard h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 25px;
+  padding-top: 10px;
+}
+
+.WeatherCard p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.WeatherCard img {
+  width: 100px;
+  height: 100px;
+}
+.Description {
+  margin-top: -15px;
+  padding-bottom: 50x;
+}
+h1 {
+  color: #f7c331;
+  box-shadow: 0 5px 15px #f7c331;
+  border-radius: 15px;
+}
+h6 {
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
